@@ -1,6 +1,9 @@
 @import "_normalize";
 @import "_variables";
-
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+$tablet: 768px;
+$deskop: 1024px;
+$latoFont: 'Lato', sans-serif;
 
 html {
   box-sizing: border-box;
@@ -11,7 +14,46 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  color: $fontColor;
+  background: $background;
+  text-align: center;
+  font-family: $latoFont;
+  height: 2000px;;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  height: 40vh;
+  width: 100%;
+  background: #dfe6e9;
+  &__list {
+    list-style: none;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+  }
+  &__switcher {
+    position: fixed;
+    right: 5%;
+    top: 2.5%;
+    border: none;
+    background: none;
+    font-size: 40px;
+  }
+  &--visible {
+    display: none;
+  }
+  &--item {
+    width: 100%;
+    padding: 19px;
+    display: block;
+    color: $fontColor;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+ 
 }
 

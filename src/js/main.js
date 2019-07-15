@@ -15,8 +15,17 @@ if ('serviceWorker' in navigator) {
 }
 
 // place your code below
+const navigation = document.querySelector('.navigation--js');
+const navigationSwitcher = document.querySelector('.navigation__switcher--js')
+
+navigationSwitcher.addEventListener('click', (e) => {
+  navigation.classList.toggle('navigation--visible')
+  navigationSwitcher.innerHTML = 'X';
+})
 
 
-console.log(`Hello world!`);
+
+
+
 
 

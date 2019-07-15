@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -316,7 +317,39 @@ html {
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: violet; }
+  color: #000;
+  background: #fff;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  height: 2000px; }
+
+.navigation {
+  position: fixed;
+  top: 0;
+  height: 40vh;
+  width: 100%;
+  background: #dfe6e9; }
+  .navigation__list {
+    list-style: none;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0; }
+  .navigation__switcher {
+    position: fixed;
+    right: 5%;
+    top: 2.5%;
+    border: none;
+    background: none;
+    font-size: 40px; }
+  .navigation--visible {
+    display: none; }
+  .navigation--item {
+    width: 100%;
+    padding: 19px;
+    display: block;
+    color: #000;
+    text-decoration: none; }
+    .navigation--item:hover {
+      cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */
