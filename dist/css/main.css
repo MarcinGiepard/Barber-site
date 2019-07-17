@@ -422,7 +422,7 @@ a {
     border: 0; }
   .find-me--footer {
     width: 80%;
-    margin-top: 40px; }
+    margin-top: 60px; }
 
 .contact {
   height: 100vh;
@@ -433,7 +433,7 @@ a {
     border-radius: 50%; }
   .contact--footer {
     height: 100px;
-    margin-top: 40px; }
+    margin-top: 20px; }
 
 .page-footer {
   width: 100%;
