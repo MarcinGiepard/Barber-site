@@ -18,15 +18,14 @@ body {
   background: $background;
   text-align: center;
   font-family: $latoFont;
-  height: 2000px;;
+  position: relative;
 }
 
 .navigation {
   position: fixed;
   top: 0;
-  height: 40vh;
   width: 100%;
-  background: #dfe6e9;
+  background: #7f8fa6;
   &__list {
     height: 100%;
     list-style: none;
@@ -36,11 +35,15 @@ body {
   }
   &__switcher {
     position: fixed;
-    right: 5%;
-    top: 2.5%;
+    right: 0%;
+    top: 0%;
     border: none;
     background: none;
     font-size: 40px;
+    &--img {
+      height: 80px;
+      width: 50px;
+    }
   }
   &--visible {
     display: none;
@@ -65,12 +68,103 @@ a {
   text-decoration: inherit;
 }
 
-.page-heading {
+.header-section {
   height: 100vh;
   width: 100%;
-  background: url("http://i1.wp.com/clipartportal.com/wp-content/uploads/2018/12/barber-clipart-black-and-white-1.jpg");
-  background-repeat: no-repeat;
-  background-size: 180%;
-  background-position: 50% 130%;
+  padding: 50px;
+  &--logo {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    height: 60px;
+    z-index: 1;
+    text-align: center;
+  }
+  &--footer {
+    height: 100px;
+  }
 }
 
+.skill-section {
+  padding: 50px 50px 0 50px;
+  height: 100vh;
+  width: 100%;
+  &__list {
+    list-style: none;
+    display: block;
+    text-align: left;
+    height: 70vh;
+    padding: 0;
+  }
+  &--item {
+    height: 25%;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    &--logo {
+      height: 40px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+    &--heading {
+      text-align: center;
+      margin: 10px 35px;
+    }
+  }
+}
+
+.my-work {
+  height: 100vh;
+  width: 100%;
+  padding: 50px;
+  &--img {
+    height: 100%;
+    width: 100%;
+  }
+  &__box {
+    height: 23%;
+    margin: 3.3% 0;
+  }
+  &__gallery {
+    height: 90%;
+  }
+}
+
+.find-me {
+  height: 100vh;
+  width: 100%;
+  padding: 50px;
+  &--map {
+    height: 250px;
+    width: 100%;
+    border:0;
+  }
+  &--footer {
+    width: 80%;
+    margin-top: 40px;
+  }
+}
+
+.contact {
+  height: 100vh;
+  width: 100%;
+  padding: 50px;
+  &--fb-img {
+    height: 70px;
+    border-radius: 50%;
+  }
+  &--footer {
+    height: 100px;
+    margin-top: 40px;
+  }
+}
+
+.page-footer {
+  width: 100%;
+  font-size: 11px;
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  
+}
