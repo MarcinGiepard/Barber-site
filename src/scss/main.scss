@@ -27,6 +27,8 @@ body {
   margin: 0;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   background: #7f8fa6;
   &__list {
@@ -213,7 +215,7 @@ a {
   .navigation {
     &--visible {
       display: block;
-
+     
     }
     &__switcher {
       display: none;
@@ -221,6 +223,7 @@ a {
     &__list {
       display: flex;
       max-width: 1024px;
+      margin: auto;
     }
     &--item {
       font-size: 20px;
