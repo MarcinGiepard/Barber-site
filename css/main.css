@@ -329,6 +329,8 @@ body {
   margin: 0;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   background: #7f8fa6; }
   .navigation__list {
@@ -472,7 +474,8 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 1024px; }
+    max-width: 1024px;
+    margin: auto; }
   .navigation--item {
     font-size: 20px;
     padding: 10px; }
